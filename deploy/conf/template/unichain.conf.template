@@ -1,0 +1,62 @@
+{
+    "CONFIGURED": true,
+    "keypair": {
+        "public": "",
+        "private": ""
+    },
+    "database": {
+        "port": 28015,
+        "name": "bigchain",
+        "host": "localhost"
+    },
+    "restore_endpoint": "http://localhost:9986/uniledger/v1/collect",
+    "api_endpoint": "http://localhost:9984/uniledger/v1",
+    "statsd": {
+        "rate": 0.01,
+        "port": 8125,
+        "host": "localhost"
+    },
+    "app": {
+        "setup_name": "UnichainDB",
+        "service_name": "unichain"
+    },
+    "keyring": [],
+    "server": {
+        "threads": null,
+        "workers": null,
+        "bind": "localhost:9984"
+    },
+    "api_need_permission":false,
+    "need_local":true,
+    "backlog_reassign_delay": 120,
+    "argument_config": {
+        "query_all_txs":true,
+        "split_backlog":false,
+        "block_pipeline.block_size" : 200,
+        "block_pipeline.pipe_maxsize" : 5000,
+        "block_pipeline.fraction_of_cores":1,
+        "block_pipeline.get_txs_processes_num":30,
+        "block_pipeline.get_txs_everytime":200,
+        "block_pipeline.write.number_of_processes":3,
+        "block_pipeline.timeout":1,
+        "block_pipeline.block_timeout":15,
+        "block_pipeline.block_size_detal":100,
+        "election_pipeline.wait_time":10,
+        "stale_pipeline.timeout":10,
+        "stale_pipeline.assignee_timeout":100,
+        "stale_pipeline.heartbeat_timeout":20,
+        "vote_pipeline.fraction_of_cores":1,
+        "vote_pipeline.validate_processes_num":50,
+        "vote_pipeline.ungroup_processes_num":50
+    },
+    "logger_config": {
+        "debug_to_file": false,
+        "debug_to_console": false
+    },
+    "restore_server": {
+        "threads": null,
+        "workers": null,
+        "bind": "localhost:9986",
+        "compress": false
+    }
+}

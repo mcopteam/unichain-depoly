@@ -1,0 +1,32 @@
+{
+    "restore_endpoint": "http://localhost:9986/uniledger/v1/collect",
+    "restore_server": {
+        "threads": null,
+        "workers": null,
+        "bind": "localhost:9986",
+        "compress": false
+    },
+    "server": {
+        "threads": null,
+        "workers": null,
+        "bind": "localhost:9984"
+    },
+    "database": {
+        "port": 28015,
+        "name": "bigchain",
+        "host": "localhost"
+    },
+    "api_endpoint": "http://localhost:9984/uniledger/v1",
+    "app": {
+        "setup_name": "UnichainDB",
+        "server_config": "unichain_server",
+        "service_name": "unichain",
+        "key_config": "unichain_key",
+        "param_config": "unichain_param"
+    },
+    "statsd": {
+        "rate": 0.01,
+        "port": 8125,
+        "host": "localhost"
+    }
+}
