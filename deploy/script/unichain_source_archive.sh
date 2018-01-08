@@ -5,7 +5,7 @@ set -e
 
 SOURCES_TAR_GZ='unichain-archive.tar.gz'
 SOURCES_ADDRESS_YF='http://192.168.0.249:99/unichain/unichain.git'
-SOURCES_ADDRESS_OTHER='http://36.110.71.170:99/unichain/unichain.git'
+SOURCES_ADDRESS_OTHER='http://192.168.0.249:99/unichain/unichain.git'
 SOURCES_BRANCH='dev'
 SOURCES_NAME='unichain'
 NEW="new"

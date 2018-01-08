@@ -7,7 +7,7 @@ set -e
 CUR_INSTALL_PATH=$(cd "$(dirname "$0")"; pwd)
 cd ../sources
 rm -rf ./unichain
-git clone http://36.110.71.170:99/unichain/unichain.git
+git clone http://192.168.0.249:99/unichain/unichain.git
 
 tar -zcvf unichain-archive.tar.gz ./unichain
 cp ../sources/unichain-archive.tar.gz ../script/

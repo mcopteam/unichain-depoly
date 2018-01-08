@@ -6,7 +6,7 @@
         "debug_to_file": false,
         "debug_to_console": false
     },
-    "order_api": "http://36.110.71.170:41",
+    "order_api": "http://192.168.0.249:41",
     "argument_config": {
         "query_all_txs":true,
         "split_backlog":false,
